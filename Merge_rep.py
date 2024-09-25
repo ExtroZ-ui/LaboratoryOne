@@ -18,5 +18,5 @@ subprocess.run(["git", "tag", "-a", "v1.0", "-m", "тест сообщения"]
 subprocess.run(["git", "push", "origin", "prd", "--tag"])
 
 print('Ветка dev в prd объединилась с установкой тэга\n Для завершения нажмите любую клавишу')
-msvcrt.getch()
+msvcrt.getche()
 
