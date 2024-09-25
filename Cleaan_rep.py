@@ -11,6 +11,7 @@ if not os.path.exists('.git'):
 subprocess.call(["git", "reset", "--hard"])
 subprocess.call(["git","clean","-fdx"])
 
-print('Очистка выполнена')
+print('Очистка выполнена\n Для завершения нажмите любую клавишу')
+msvcrt.getch()
 
 
