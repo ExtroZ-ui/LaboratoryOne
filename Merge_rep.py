@@ -14,7 +14,7 @@ subprocess.run(["git", "merge", "--no-ff", "dev"])
 print('Введите название тега')
 new_tag = input()
 # Установка тега
-subprocess.run(["git", "tag", "-a", "{new_tag}", "-m", "тест сообщения"])
+subprocess.run(["git", "tag", "-a", {new_tag}, "-m", "тест сообщения"])
 
 # Отправка изменений
 subprocess.run(["git", "push", "origin", "prd", "--tag"])
